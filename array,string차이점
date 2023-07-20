@@ -1,0 +1,40 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main() {
+    /*
+    char fstname[20];
+    cout<<"fisrt name :";
+    cin.getline(fstname,20);
+
+    char lasname[20];
+    cout<<"last name : ";
+    cin.getline(lasname,20);
+
+    int n= sizeof(fstname)+sizeof(lasname);
+
+
+    char name[n];
+    strcpy(name,fstname);
+    strcat(name,", ");
+    strcat(name,lasname);
+    cout<<name<<endl;
+    cout<<sizeof(name)<<sizeof(fstname)<<sizeof(lasname);
+    */
+    string fstname;
+    cout<<"first name : ";
+    getline(cin,fstname);
+    cout<<"last name : ";
+    string lasname;
+    getline(cin,lasname);
+    string alname;
+    alname = fstname;
+    alname += ", " + lasname;
+    cout<< alname;
+
+
+    return 0;
+
+}
